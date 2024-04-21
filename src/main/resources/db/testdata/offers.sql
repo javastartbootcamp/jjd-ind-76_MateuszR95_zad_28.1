@@ -1,5 +1,5 @@
 INSERT INTO offer(title, description, img_url, price, category_id) VALUES
-                                                                       ('Smartfon', 'Najnowszy smartfon z ekranem o wysokiej rozdzielczości', 'https://www.abc.jpg', 1499.99, 1),
+                                                                       ('Smartfon', 'Najnowszy smartfon z ekranem o wysokiej rozdzielczości', 'https://www.vedion.pl/pol_pl_Apple-iPhone-8-Space-Gray-64GB-Smartfon-Stan-Jak-Nowy-12908_4.jpg', 1499.99, 1),
                                                                        ('Słuchawki Bluetooth', 'Bezprzewodowe słuchawki z długim czasem działania baterii', 'https://www.cba.jpg', 199.99, 1),
                                                                        ('Smartwatch', 'Elegancki smartwatch monitorujący aktywność fizyczną', 'https://www.cab.jpg', 599.99, 1);
 INSERT INTO offer(title, description, img_url, price, category_id) VALUES

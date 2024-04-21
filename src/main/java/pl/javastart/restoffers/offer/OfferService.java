@@ -29,12 +29,10 @@ public class OfferService {
     }
 
     public List<OfferDto> getFilteredOffersByTitle(String text) {
-        List<OfferDto> allOffers = getAllOffers();
         if (text == null) {
-            return allOffers;
+            return getAllOffers();
         }
-        return allOffers.stream().filter(offerDto -> offerDto.getTitle().toUpperCase().contains(text.toUpperCase()))
-                .toList();
+        return offerRepository.getOfferByTitleContainsIgnoreCase(text).stream().map(offerDtoMapper::mapToDto).toList();
     }
 
     public OfferDto saveOffer(OfferDto offerDto) {
